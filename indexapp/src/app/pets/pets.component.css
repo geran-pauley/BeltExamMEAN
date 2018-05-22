@@ -1,0 +1,31 @@
+*{
+   margin: 0px; 
+}
+
+.details{
+    background: linear-gradient(#d2e0f4, #94a5b8, #445c6c);
+    border-radius: 5px;
+    border: none;
+    color: white;
+    margin-right: 10px;
+}
+
+.edit{
+    background: linear-gradient(#f4ddc6, #405766);
+    border-radius: 5px;
+    border: none;
+    color: white; 
+}
+table{
+    border: 1px solid black;
+}
+td{
+    margin-right: 15px;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+h4{
+    color: #0000ee;
+    text-decoration: underline;
+}

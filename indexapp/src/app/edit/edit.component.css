@@ -1,0 +1,33 @@
+*{
+    margin: 0px;
+}
+
+button{
+    display: inline;
+    background-color:skyblue;
+    border-radius: 5px;
+    color: white;
+    border: none;
+    padding: 3px;
+}
+
+.skills{
+    margin-left: 20px;
+}
+
+#add{
+    margin-left: 38px;
+    margin-right: 13px;
+}
+
+#cancel{
+    margin-left: 13px;
+}
+
+p{
+    color: gray;
+}
+
+input{
+    border-radius: 3px;
+}

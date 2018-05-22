@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Add a Pet</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js">
+</script>
+</head>
+<body>
+  <div class="adddiv">
+    <h3>Know of a pet needing a home?</h3>
+    <form novalidate="" (submit)="addPet()" class="edit_form">
+      <p>Name:</p>
+
+      <input name="newPet.name" type="text" [(ngModel)]="newPet.name" required ng-minlength="2"/><span style="color: red">{{error1}}</span>
+      <p>Type:</p>
+  
+      <input type="text" name="newPet.type" [(ngModel)]="newPet.type" required><span style="color: red">{{error2}}</span>
+      <p>Description:</p>
+  
+      <input type="text" name="newPet.description" [(ngModel)]="newPet.description" required><span style="color: red">{{error3}}</span>
+      <p>Skills:</p>
+      <div class="Skills">
+        <p>Skill 1:
+          <input type="text" name="newPet.skill1" [(ngModel)]="newPet.skill1" required>
+        </p>
+        <br>
+        <p>Skill 2:
+          <input type="text" name="newPet.skill2" [(ngModel)]="newPet.skill2" required>
+        </p>
+        <br>
+        <p>Skill 3:
+          <input type="text" name="newPet.skill3" [(ngModel)]="newPet.skill3" required>
+        </p>
+
+
+
+        
+      </div>
+      <button id="add" type="submit">Add Pet</button>
+      <button id="cancel" [routerLink]="['/']">Cancel</button>
+    </form>
+  
+  </div>
+</body>
+</html>

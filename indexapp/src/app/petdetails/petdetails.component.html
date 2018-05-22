@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Edit Pet</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+  <button id="home" [routerLink]="['/']">Home</button> <br>
+      Name: {{pet.name}}<br>
+      Type: {{pet.type}}<br>
+      Description: {{pet.description}}<br>
+      Skills: <br>
+      Skill 1: {{pet.skill1}} <br>
+      Skill 2: {{pet.skill2}} <br>
+      Skill 3: {{pet.skill3}} <br>
+      Likes: ({{pet.likes}}) <br>
+      <button id="like" *ngIf="boolean" (click)="like()" >Like this Pet</button>
+      <button class="delete" (click)="deletePet(pet._id)" name="delete">Adopt This Pet</button>
+</body>
+</html>

@@ -1,0 +1,24 @@
+  <div class="editdiv">
+    <form novalidate="" (submit)="editPet()" class="edit_form">
+      <p>Name:</p>
+      <input type="text"  name="pet.name" [(ngModel)]='pet.name'>
+      <p>Type:</p>
+      <input type="text" name="pet.type" [(ngModel)]="pet.type">
+      <p>Description:</p>
+      <input type="text" name="pet.description" [(ngModel)]="pet.description">
+      <p>Skills:</p>
+      <div class="skills">
+        <p>Skill 1:
+          <input type="text" name="pet.skill1" [(ngModel)]="pet.skill1">
+        </p>
+        <p>Skill 2:
+          <input type="text" name="pet.skill2" [(ngModel)]="pet.skill2">
+        </p>
+        <p>Skill 3:
+          <input type="text" name="pet.skill3" [(ngModel)]="pet.skill3">
+        </p>
+        <button id="add" type="submit">Edit Pet</button>
+        <button id="cancel" [routerLink]="['/']">Cancel</button>
+      </div>
+    </form>
+  </div>
